@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ExemploController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -9,7 +11,7 @@ use App\Http\Controllers\ExemploController;
 |
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
+| be assigned to the "web" middleware group. Make something great!                  
 |
 */
 
@@ -19,4 +21,10 @@ use App\Http\Controllers\ExemploController;
 //Route::get('/exemplo', function () {
 //    return view('exemplo');
 //});
+
 Route::get('/exemplo',[App\Http\Controllers\ExemploController::class,'index']);
+
+
+
+Route::get('/alunos',[App\Http\Controllers\AlunoController::class,'listar']);
+Route::get('/alunos/(id)',[App\Http\Controllers\AlunoController::class,'listarId']);
