@@ -1,19 +1,20 @@
 <?php
 
 namespace App\Http\Controllers;
-use app\Models\Sluno;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Aluno;
 
 class AlunoController extends Controller
 {
     public function listar(){
-        $alunos = Alunos::all();
-        return response()->json($alunos);
+        $alunos = Aluno::all();
+        return view('listarAlunos')->with('alunos',$alunos);
 
     }
     public function listarId(){
-        $alunos = Alunos::find($id);
+        $alunos = Aluno::find($id);
         return response()->json($alunos);
 
     }

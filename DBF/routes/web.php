@@ -27,4 +27,4 @@ Route::get('/exemplo',[App\Http\Controllers\ExemploController::class,'index']);
 
 
 Route::get('/alunos',[App\Http\Controllers\AlunoController::class,'listar']);
-Route::get('/alunos/(id)',[App\Http\Controllers\AlunoController::class,'listarId']);
+Route::get('/alunos/{id}',[App\Http\Controllers\AlunoController::class,'listarId']);
