@@ -7,6 +7,9 @@
 </head>
 <body>
     <h1>Listar aluns</h1>
+    @error('erro')
+            <div>{{$message}}</div>
+    @enderror
     <table>
         <thead>
             <tr>
