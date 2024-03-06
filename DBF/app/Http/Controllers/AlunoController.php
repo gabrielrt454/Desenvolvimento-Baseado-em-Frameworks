@@ -23,11 +23,12 @@ class AlunoController extends Controller
         }
     }
     public function store(Request $request){
+       // return $request->all();
         $alunos = new Aluno;
-        $alunos ->nome -$request->nome;
-        $alunos ->data_nascimento -$request->data_nascimento;
-        $alunos ->email -$request-email;
-        $alunos ->curso -$request-curso;
+        $alunos ->nome =$request->nome;
+        $alunos ->data_nascimento =$request->data_nascimento;
+        $alunos ->email =$request->email;
+        $alunos ->cursso =$request->cursso;
         $alunos->save();
 
 
