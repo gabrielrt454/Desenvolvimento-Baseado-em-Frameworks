@@ -33,4 +33,10 @@ class AlunoController extends Controller
 
         return response()->json($alunos,201);
     }
+
+
+
+    public function criar(){
+        return view('novoAluno');
+    }
 }

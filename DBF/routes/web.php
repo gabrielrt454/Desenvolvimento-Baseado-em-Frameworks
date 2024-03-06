@@ -28,3 +28,10 @@ Route::get('/exemplo',[App\Http\Controllers\ExemploController::class,'index']);
 
 Route::get('/alunos',[App\Http\Controllers\AlunoController::class,'listar']);
 Route::get('/alunos/{id}',[App\Http\Controllers\AlunoController::class,'listarId']);
+
+
+
+Route::get('novoAluno',[App\Http\Controllers\AlunoController::class,'criar']);
+
+
+Route::post('salvarAluno',[App\Http\Controllers\AlunoController::class,'store'])->name(alunos.salvar);

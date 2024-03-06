@@ -20,4 +20,5 @@
     <label for="curso">Curso</label>
     <input type="text" neme="curso" required>
 </div>
+<button type="submit" class="btn btn-primary">Adicionar</button>
 </html>
