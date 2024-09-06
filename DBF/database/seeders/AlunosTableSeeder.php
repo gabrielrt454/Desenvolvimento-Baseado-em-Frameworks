@@ -16,6 +16,7 @@ class AlunosTableSeeder extends Seeder
     {
         DB::table('alunos')->insert([
             ['nome'=>'Gabriel Ragale', 'email'=>'gabriel.trin@estudante.ifms.edu.br', 'data_nascimento' =>'2007-01-01','cursso'=>'Desenvolvimento baseado em frameworks']
+       
         ]);
         }
 }

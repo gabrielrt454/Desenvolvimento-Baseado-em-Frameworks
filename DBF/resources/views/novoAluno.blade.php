@@ -1,11 +1,20 @@
+
+<!-- Primeiro a decorar -->
 <html>
 <h2>Adicionar Aluno</h2>
-<form method="POST" action="{{route('alunos.salvar')}}">
-@csrf
+<!-- daqui -->
+<form method="POST" action="{{route('alunos.salvar')}}"> <!-- //importante para prova -->
+@csrf <!-- token de segurança e perde ponto se não colocar -->
+
 <div>
-    <label for="nome">Nome</label>
-    <input type="text" name="nome" required>
+    
+    <input name="nome" ><!-- o name vem do controle após o igual ou seja 
+desta parte $request->data_nascimento
+-->
+    <!-- só precisa disso pra prova -->
 </div>
+
+<!-- Até aqui é o mais importante -->   
 <div>
     <label for="data_nascimento">Data de nascimento</label>
     <input type="date" name="data_nascimento" required>
